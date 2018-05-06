@@ -20,14 +20,14 @@ ex)
 <hr />
 6. 다른 Route로 props를 전달해주고 싶을 경우 *:*, 를 url path앞에 붙여주면 url 파라미터로 동작함.
 <hr />
-<code>
+\`
   <Route exact path="/" component={Home} />
   <Route path="/about/:username" component={About} />
   <Route path="/posts" component={Posts} />
   <Route path="/login" component={Login} />
   <Route path="/me" component={MyPage} />
   <Route path="/search" component={Search} />
-</code>
+\`
 <hr />
 이를 사용할때는 앞서 말한 props.match에서 parmas라는 obj의 프로퍼티로 담겨져서 옴.
 7. query String을 다룰때는 *props.location.search* 에 담겨져있는데 한글일 경우 인코딩이 안되서 깨져있다. 이럴 경우 es6의 javascript api인 *new URLSearchParams* 를 사용하여 인코딩해주면된다.
@@ -35,6 +35,6 @@ ex)
 <code>
   new URLSearchParams(location.search).get('keyword')
 </code>
-[https://developer.mozilla.org/ko/docs/Web/API/URLSearchParams]https://developer.mozilla.org/ko/docs/Web/API/URLSearchParams
+[https://developer.mozilla.org/ko/docs/Web/API/URLSearchParams]
 <hr />
 
