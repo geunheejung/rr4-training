@@ -16,13 +16,7 @@
 
 ex)
 
-<pre><code>
-          <button
-            onClick={() => history.push('/posts')}
-          >
-            Post 보러가기
-          </button>
-</code></pre>
+!['code'](file:///Users/jeong-geunhui/Desktop/4.png)
 
 <hr />
 
@@ -30,16 +24,7 @@ ex)
 
 <hr />
 
-<pre><code>
-  <div>
-    <Route exact path="/" component={Home} />
-    <Route path="/about/:username" component={About} />
-    <Route path="/posts" component={Posts} />
-    <Route path="/login" component={Login} />
-    <Route path="/me" component={MyPage} />
-    <Route path="/search" component={Search} />
-  </div>
-</code></pre>
+!['code'](file:///Users/jeong-geunhui/Desktop/3.png)
 
 <hr />
 
@@ -63,22 +48,4 @@ ex)
 
 ### 전체적인 루트 Router 부분
 
-<pre><code>
-
-<Router>
-  <div>
-    <Header />
-
-    <Switch>
-      <Route exact path="/" component={Home}/>
-      <Route path="/about/:username" component={About}/>
-      <Route path="/posts" component={Posts} />
-      <Route path="/login" component={Login} />
-      <Route path="/me" component={MyPage} />
-      <Route path="/search" component={Search} />
-      <Route component={NoMatch} />
-    </Switch>
-  </div>
-</Router>
-
-</code></pre>
+!['code'](file:///Users/jeong-geunhui/Desktop/1.png)
